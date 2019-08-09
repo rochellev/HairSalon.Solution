@@ -10,8 +10,10 @@
 * .NET
 * ASP.NET Core MVC
 * HTML
+* MySQL
+* Entity
 
-## Project Installation
+## App Installation and Running
 * Follow the following stepts using the terminal
 * Click on the local host link (Ctrl + click )
 
@@ -22,7 +24,14 @@ $ dotnet restore
 $ dotnet run
 ```
 
-## Database Setup
+## App Database Setup
+* The Database is named "rochelle_roberts"
+```sh
+> CREATE DATABASE rochelle_roberts;
+> USE rochelle_roberts;
+> CREATE TABLE stylists (SylistId serial PRIMARY KEY, name VARCHAR(255), specialty VARCHAR(255));
+> CREATE TABLE clients (ClientId serial PRIMARY KEY, name VARCHAR(255));
+```
 
 ## Specs
 
