@@ -1,9 +1,9 @@
-# Project
+# Hair Salon Wep App
 ### By Rochelle Roberts
 -----
 
 ## Description
-* Project template for C# Web Apps
+* Hair Salon App provides means for the salon owner to manage their sylists and clients.
 
 ## Technologies Used
 * C#
@@ -28,4 +28,5 @@ $ dotnet run
 
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
-
+| Salon owner navigates to web app, and they are welcomed by a homepage | run app | homepage |
+| Homepage 
