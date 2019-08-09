@@ -3,7 +3,7 @@
 -----
 
 ## Description
-* Hair Salon App provides means for the salon owner to manage their sylists and clients.
+* Hair Salon App helps the Salon Owner manage their sylists and clients.
 
 ## Technologies Used
 * C#
@@ -26,6 +26,7 @@ $ dotnet run
 
 ## Database Setup
 * The Database is named "rochelle_roberts"
+
 ```sh
 > CREATE DATABASE rochelle_roberts;
 > USE rochelle_roberts;
