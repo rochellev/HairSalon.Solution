@@ -13,7 +13,7 @@
 * MySQL
 * Entity
 
-## App Installation and Running
+## Installation and Running
 * Follow the following stepts using the terminal
 * Click on the local host link (Ctrl + click )
 
@@ -24,7 +24,7 @@ $ dotnet restore
 $ dotnet run
 ```
 
-## App Database Setup
+## Database Setup
 * The Database is named "rochelle_roberts"
 ```sh
 > CREATE DATABASE rochelle_roberts;
