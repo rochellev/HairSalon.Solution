@@ -26,12 +26,14 @@ $ dotnet run
 
 ## Database Setup
 * The Database is named "rochelle_roberts"
+* Note: starting mysql varies by machine
 
 ```sh
+> mysql -uroot -p<password>
 > CREATE DATABASE rochelle_roberts;
 > USE rochelle_roberts;
-> CREATE TABLE stylists (SylistId serial PRIMARY KEY, name VARCHAR(255), specialty VARCHAR(255));
-> CREATE TABLE clients (ClientId serial PRIMARY KEY, name VARCHAR(255));
+> CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR(255), Specialty VARCHAR(255));
+> CREATE TABLE clients (ClientId serial PRIMARY KEY, FirstName VARCHAR(255), LastName VARCHAR(255), StylistId INT(11));
 ```
 
 ## Specs
