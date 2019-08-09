@@ -28,7 +28,7 @@ $ dotnet run
 
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
-| Salon owner starts app, and they are welcomed by a homepage | run app | user sees homepage |
+| Salon owner starts app, and they are welcomed by a homepage | salon owner runs app | user sees homepage |
 | From the Homepage, Salon owner can click links to see all the stylists | click on link to see sylists | app routes user to stylist page |
 | On the Sylist page, salon owner will see a list of all the current sylists working in thier salon | user navigates to sylist page | the page displays the current list of sylists |
 | From the Stylist page, Salon owner can add stylists to their salon by filling out a "new stylist" form | salon owner clicks on link to add new stylist, then is routed to the new stylist form | upon submission, the new stylist will be added to the list of stylists |
