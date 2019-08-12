@@ -13,9 +13,9 @@
 * MySQL
 * Entity
 
-## Installation and Running
+## Installation
 * Follow the following stepts using the terminal
-* Click on the local host link (Ctrl + click )
+* After running project, got to http://localhost:5000
 
 ```sh
 $ git clone https://github.com/rochellev/HairSalon.Solution.git
@@ -29,7 +29,6 @@ $ dotnet run
 * Note: starting mysql varies by machine
 
 ```sh
-> mysql -uroot -p<password>
 > CREATE DATABASE rochelle_roberts;
 > USE rochelle_roberts;
 > CREATE TABLE stylists (StylistId serial PRIMARY KEY, Name VARCHAR(255), Specialty VARCHAR(255));
