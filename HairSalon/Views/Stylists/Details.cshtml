@@ -8,7 +8,9 @@
 
 <h2>Stylist Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayFor(model => model.Name), @Html.DisplayFor(model => model.Specialty) Specialist</h3>
+
+<p>@Html.DisplayFor(model => model.Clients.Count)</p>
 
 <ul>
 @if (@Model.Clients.Count == 0)

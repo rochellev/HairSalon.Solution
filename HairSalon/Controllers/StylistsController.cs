@@ -36,8 +36,9 @@ namespace HairSalon.Controllers
 
         public ActionResult Details(int id)
         {
-            Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-            return View(thisStylist);
+            Stylist thisStylist = _db.Stylists.FirstOrDefault(myStylist => myStylist.StylistId == id);
+            List<Client> clientList = _db.Clients.Where(client => client.StylistId == id).ToList();
+            return View(clientList);
         }
     }
 }
