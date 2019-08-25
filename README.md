@@ -27,6 +27,7 @@ $ dotnet run
 
 ## Database Setup
 * The Database is named "rochelle_roberts"
+* Using migrations to maintain database
 * Type dotnet ef database update
 * Note: starting mysql varies by machine
 
