@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System.Dynamic;
 using HairSalon.Models;
 
 namespace HairSalon.Controllers
@@ -36,9 +37,10 @@ namespace HairSalon.Controllers
 
         public ActionResult Details(int id)
         {
-            Stylist thisStylist = _db.Stylists.FirstOrDefault(myStylist => myStylist.StylistId == id);
-            List<Client> clientList = _db.Clients.Where(client => client.StylistId == id).ToList();
-            return View(clientList);
+            dynamic myModel = new ExpandoObject();
+            myModel.currentStylist = _db.Stylists.FirstOrDefault(myStylist => myStylist.StylistId == id);
+            myModel.clientList = _db.Clients.Where(client => client.StylistId == id).ToList();
+            return View(myModel);
         }
     }
 }
